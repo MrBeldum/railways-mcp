@@ -4,6 +4,9 @@ All notable changes are documented here. The format follows [Keep a Changelog](h
 
 ## [Unreleased]
 
+### Fixed
+- **Blank settings:** `PORT`, `HOST`, `DATA_DIR`, `NOMINATIM_URL` and `NOMINATIM_EMAIL` left empty (as in `.env.example`) now fall back to their defaults instead of stopping the server at startup. The served version and default User-Agent now come from `package.json`.
+
 ## [0.3.0] - 2026-10-05
 
 ### Added
